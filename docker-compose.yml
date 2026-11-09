@@ -1,0 +1,7 @@
+services:
+  district-hospital-fhir:
+    image: hapiproject/hapi:latest
+    container_name: district-hospital-fhir
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
